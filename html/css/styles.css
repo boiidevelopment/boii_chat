@@ -1,0 +1,304 @@
+/*----------------------------*/
+/*---- BOII | DEVELOPMENT ----*/
+/*----------------------------*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+    /* You can adjust the colours for the pre-defined chats here */
+    /* You can add any additional colours here, and define the classes at the bottom of the file */
+    /* Using the root for additional chat types is optional */
+    --default: #4dcbc2;
+    --local: #b4b4b4;
+    --staff: #4CAF50;
+    --staff_only: #4CAF50;
+    --advert: #FF9800; 
+    --police: #2196F3;
+    --ems: #E91E63;
+    --warning: #ff0000;
+    --pm: #800080;
+    --success: #00ff00;
+    --group: #ffff66;
+    --trade: #ff7f50;    
+}
+
+/* cfx default styles */
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.no-grow {
+    flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}
+
+.chat-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 48% !important;
+    background-color: transparent !important;
+    -webkit-animation-duration: 2s;
+}
+
+.chat-messages {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 1.3vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.chat-message {
+    display: inline-block;
+    overflow: hidden;
+    border: none;
+    align-items: left !important;
+    margin-left: 1%;
+    border-radius: 15px;
+    background-color: #1f1e1e;
+    opacity: 0.9;
+    color: #b4b4b4;
+    width: fit-content;
+    max-width: 100%;
+    padding: 1%;
+
+}
+
+.msg {
+    margin-top: 1%;
+}
+
+.chat-input {
+    font-size: 1.2vh;
+    position: absolute;
+    top: 49%;
+    left: 0.45%;
+    width: 25%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.chat-input > div.input {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    background-color: #1f1e1e;
+    opacity: 0.9;
+    border-radius: 15px;
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px #2b2a2a;
+}
+
+.chat-hide-state {
+    text-transform: uppercase;
+    margin-left: 0.05vw;
+    font-size: 1.65vh;
+}
+
+.prefix {
+    font-size: 1.2vh;
+    /*position: absolute;
+    top: 0%;*/
+    height: 100%;
+    vertical-align: middle;
+    line-height: calc(1vh + 1vh + 1.85vh);
+    padding-left: 0.5vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+}
+
+textarea {
+    font-size: 1.65vh;
+    line-height: 1.85vh;
+    display: block;
+    box-sizing: content-box;
+    padding: 1vh;
+    padding-left: 0.5vh;
+    color: white;
+    border-width: 0;
+    height: 3.15%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    background-color: transparent;
+    resize: none;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.multiline {
+    margin-left: 4%;
+    text-indent: -1.2rem;
+    white-space: pre-line;
+}
+
+.suggestions {
+    margin-top: 3%;
+    list-style-type: none;
+    padding: 0.5%;
+    padding-left: 1.4%;
+    font-size: 1.65vh;
+    box-sizing: border-box;
+    color: #b4b4b4;
+    background-color: #1f1e1e;
+    opacity: 0.9;
+    border-radius: 15px;
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px #2b2a2a;
+    width: 100%;
+}
+
+.help {
+    color: #b0bbbd;
+}
+
+.disabled {
+    color: #b0bbbd;
+}
+
+.suggestion {
+    margin-bottom: 0.5%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.hidden.animated {
+    transition: opacity 1s;
+}
+
+/* chat template styles */
+
+i {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+player_name {
+    color: white;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+}
+
+group_name {
+    color: white;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+
+.default {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px var(--default);
+}
+
+.default i {
+    color: var(--default);
+}
+
+.local {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px var(--local);
+}
+
+.local i {
+    color: var(--local);
+}
+
+.staff {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px var(--staff);
+}
+
+.staff i {
+    color: var(--staff);
+}
+
+.staff_only {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px var(--staff_only);
+}
+
+.staff_only i {
+    color: var(--staff_only);
+}
+
+.advert {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px var(--advert);
+}
+
+.advert i {
+    color: var(--advert);
+}
+
+.police {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px var(--police);
+}
+
+.police i {
+    color: var(--police);
+}
+
+.ems {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px var(--ems);
+}
+
+.ems i {
+    color: var(--ems);
+}
+
+.warning {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px var(--warning);
+}
+
+.warning i {
+    color: var(--warning);
+}
+
+.pm {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px var(--pm);
+}
+
+.pm i {
+    color: var(--pm);
+}
+
+.success {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px #4CAF50;
+}
+
+.success i {
+    color: #4CAF50;
+}
+
+.group {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px #ffff66;
+}
+
+.group i {
+    color: #ffff66;
+}
+
+.trade {
+    box-shadow: 3px 5px 5px #0d0c0c, -3px -4px 5px #ff7f50;
+}
+
+.trade i {
+    color: #ff7f50;
+}
