@@ -1,3 +1,5 @@
+![CHAT_THUMB](https://github.com/boiidevelopment/boii_chat/assets/90377400/6d83f28c-afca-470f-a623-34d72d96f7d1)
+
 # BOII Development - Chat
 
 ### Overview
