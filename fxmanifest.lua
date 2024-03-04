@@ -6,14 +6,14 @@
     | |_) | |__| || |_ _| |_  | | | |__| | |____   \  /  | |____| |___| |__| | |    | |  | | |____| |\  |  | |   
     |____/ \____/_____|_____| | | |_____/|______|   \/   |______|______\____/|_|    |_|  |_|______|_| \_|  |_|   
                               | |                                                                                
-                              |_|           CHAT THEME V0.0.1
+                              |_|           CHAT THEME V1.0.0
 ]]
 
 fx_version 'cerulean'
 games { 'gta5', 'rdr3' }
 
 name 'boii_chat'
-version '0.0.1'
+version '1.0.0'
 description 'BOII | Development - Chat Theme'
 author 'boiidevelopment'
 repository 'https://github.com/boiidevelopment/boii_chat'
