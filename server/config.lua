@@ -6,6 +6,7 @@ config = config or {}
 --- @section Chat logging settings
 
 --- Logging paths and toggle save.
+-- Log files will be created when the save count is reached, or all will be created on first restart if save_on_restart is true.
 -- @field path: File path to load / save json files.
 -- @field should_log: Enable/disable chat logging for the chat type.
 config.logs = {
@@ -37,84 +38,84 @@ config.discord = {
         enabled = true,
         title = 'GLOBAL CHAT',
         colour = 5098434,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     },
     local_chat = {
         enabled = true,
         title = 'LOCAL CHAT',
         colour = 11842740,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     },
     staff = {
         enabled = true,
         title = 'STAFF CHAT',
         colour = 5025616,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     },
     staff_only = {
         enabled = true,
         title = 'STAFF ONLY CHAT',
         colour = 5025616,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     },
     adverts = {
         enabled = true,
         title = 'ADVERTISEMENT',
         colour = 16750592,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     },
     police = {
         enabled = true,
         title = 'POLICE CHAT',
         colour = 2201331,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     },
     ems = {
         enabled = true,
         title = 'EMS CHAT',
         colour = 15277667,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     }, 
     player_warning = {
         enabled = true,
         title = 'PLAYER WARNING',
         colour = 16711680,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     }, 
     warning = {
         enabled = true,
         title = 'GLOBAL WARNING',
         colour = 16711680,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     },
     pm = {
         enabled = true,
         title = 'PRIVATE MESSAGE',
         colour = 8388736,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     },
     group = {
         enabled = true,
         title = 'GROUP CHAT',
         colour = 16777062,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     },
     trade = {
         enabled = true,
         title = 'TRADE CHAT',
         colour = 16744272,
-        webhook = 'https://discord.com/api/webhooks/1213931393843732580/UVWq68UgRZv-5B8Cg9MGEmDFo-1mYVT13DBrkTWM8zMYUiTWTGXPyxUWmpJdHuwvJunD',
+        webhook = 'PUT YOUR WEBHOOK HERE',
         should_mention = false,
     }
 }
