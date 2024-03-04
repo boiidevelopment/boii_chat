@@ -16,6 +16,7 @@ Enjoy.
 
 - **Multiple pre-defined chat types:** Various types of rp related chats have been setup for use out of the box.
 - **Message logs:** Simple logging system to save and log all messages to json files periodically.
+- **Discord logs:** Simple discord webhook logging system.
 - **Adaptable and Open Source:** Easily adaptable for adding new chat types or modifying existing ones.
 - **Multi-Framework Support**: Compatible with various game server frameworks through use of `boii_utils`.
 
